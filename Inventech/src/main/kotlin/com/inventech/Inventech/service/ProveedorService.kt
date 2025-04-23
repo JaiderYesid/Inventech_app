@@ -32,3 +32,18 @@ class ProveedorService(private val supplierRepository: ProveedorRepository) {
         } else false
     }
 }
+
+
+//package com.inventech.Inventech.service
+//
+//import com.inventech.Inventech.model.Proveedor
+//import com.inventech.Inventech.repository.ProveedorRepository
+//import org.springframework.stereotype.Service
+//
+//@Service
+//class ProveedorService(private val repo: ProveedorRepository) {
+//    fun listar() = repo.findAll()
+//    fun guardar(p: Proveedor) = repo.save(p)
+//    fun buscar(id: Long) = repo.findById(id).orElse(null)
+//    fun eliminar(id: Long) = repo.deleteById(id)
+//}
