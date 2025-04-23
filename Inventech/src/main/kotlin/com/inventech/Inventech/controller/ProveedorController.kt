@@ -35,3 +35,27 @@ class ProveedorController(private val supplierService: ProveedorService) {
         else ResponseEntity.notFound().build()
     }
 }
+
+
+//package com.inventech.Inventech.controller
+//
+//import com.inventech.Inventech.model.Proveedor
+//import com.inventech.Inventech.service.ProveedorService
+//import org.springframework.web.bind.annotation.*
+//
+//@RestController
+//@RequestMapping("/proveedores")
+//class ProveedorController(private val service: ProveedorService) {
+//
+//    @GetMapping
+//    fun listar() = service.listar()
+//
+//    @PostMapping
+//    fun guardar(@RequestBody proveedor: Proveedor) = service.guardar(proveedor)
+//
+//    @GetMapping("/{id}")
+//    fun buscar(@PathVariable id: Long) = service.buscar(id)
+//
+//    @DeleteMapping("/{id}")
+//    fun eliminar(@PathVariable id: Long) = service.eliminar(id)
+//}
